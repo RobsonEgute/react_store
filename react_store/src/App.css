@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+body {
+  overflow-x: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  display: grid;
+  width: 101vw;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(1, 60px);
+  background-color: rgb(255, 177, 81);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search_bar {
+  width: 88%;
+  height: 40px;
+  margin-top: 11px;
 }
+.search_bar_btn {
+  width: 12%;
+  height: 40px;
+  margin-top: 11px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.link {
+  text-decoration: none;
+  list-style-type: none;
   color: white;
 }
+.col_1 {
+  justify-self: center;
+  align-self: center;
+ }
+ .col_3 {
+  justify-self: start;
+  align-self: start;
+ }
+ .icon {
+  position: relative;
+  margin-left: 10px;
+  top: 2px;
+  right: 2px;
+ }
+ .dropdown_menu {
+  display: block;
+  background-color: brown;
+  width: 150px;
+  height: 80px;
+  position: relative;
+  left: 100px;
+ }
+ .homePage_front {
+  display: grid;
+  width: 95.5vw;
+  height: 80vh;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: space-around;
+  background-color: rgb(132, 107, 107);
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(1, 70vh);
+  padding: 20px 20px 0px 20px;
+ }
+ .category_cont {
+  background-color: aliceblue;
+ }
+ .home_slider_cont {
+  background-color: aquamarine;
+ }
+ .special_deals_cont {
+  background-color: bisque;
+ }
+ .cat_li {
+  margin-top: 10px;
+  text-decoration: none;
+  list-style-type: none;
+ }
+ .cat_icon {
+  position: relative;
+  top: 2px;
+  right: 4px;
+ }
+ a {
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(70, 69, 69);
+ }
+ .right_arrow_slider:hover {
+  cursor: pointer;
+ }
+ .left_arrow_slider:hover {
+  cursor: pointer;
+ }
+ .homepage_carousel { 
+  display: grid;
+  width: 98.67vw;
+  height: 0vh;
+  background-color: burlywood;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ /* horizontalCat.js component styling */
+ .cat_horz {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  height: 100px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ }
+ .cat_img_cont {
+  display: inline-block;
+  height: 20vh;
+  border: 3px solid black;
+ }
+ .cat_horz_1 {
+  grid-area: 1 / 1 / 1 / 4;
+ }
+ .cat_horz_2 {
+  grid-area: 1 / 4 / 1 / 6;
+ }
+ .cat_horz_3 {
+  grid-area: 2 / 1 / 2 / 4;
+ }
+ .cat_horz_4 {
+  grid-area: 2 / 4 / 2 / 6;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ /* Product Carousel Section */
+ .pdt_carsl_sec {
+  margin-top: 200px;
+  height: 50vh;
+  width: 100%;
+ }
+
+ /* image carousel */
+ .card {
+  width: 25vw;
+  height: 60vh;
+  background-color: whitesmoke;
+  border: 2px solid black;
+ }
+
+ /* Top selling product add to cart button hover over styling */
+ .pdt_button:hover { 
+    background-color: blue;
+ }
+
+ /* flash sales carousel section */
+ .flash_sales_carsl {
+  margin-top: 150px;;
+ }
+
+ /* footer styling */
+
+ .footerSec {
+  width: 100%;
+  height: 60vh;
+  background-color: brown;
+  margin-top: 20px;
+ }
+ .footerCon {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+ }
